@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body,html{
+    height: 100%;
+}
+
+#container{
+    border: .1rem solid #ccc;
+    width: 25rem;
+    height: 25rem;
+}

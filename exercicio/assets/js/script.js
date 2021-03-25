@@ -7,12 +7,11 @@ $(function () {
     function abrirJanela() {
         btn.click(function (e) {
             e.stopPropagation()
-            $('.Icon').fadeIn()
             bg.fadeIn()
         })
     }
     function fecharJanela() {
-        $('.Icon').click(function () {
+        $('.close').click(function () {
             bg.fadeOut()
         })
     }
@@ -28,14 +27,11 @@ $(function () {
             el.data('invalido', 'true')
         }
         
+        // if statements
         if(verificarNome(nome) == false) err($('input[name=nome]'))
         else if(verificarNumero(telefone) == false) err($('input[name=phone]'))
         else if(verificarEmail(email) == false) err($('input[type=email]'))
-        else alert('Form enviado com sucesso!')
-
-
-        
-        
+        else alert('Form enviado com sucesso!')        
 
         // verify functions
         function verificarNome(nome) {
